@@ -239,3 +239,35 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+span {
+  display: inline-block;
+}
+
+.trash-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6e2e3;
+  border: none;
+  /* border: 1px solid darkgrey; */
+  cursor: pointer;
+}
+
+.trash-button * {
+  pointer-events: none;
+}
+
+.trash-button:hover {
+  background-color: #b93f46;
+  color: white;
+}
+
+.line-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
