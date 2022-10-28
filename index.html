@@ -9,5 +9,45 @@
     <link rel="stylesheet" href="./css/style.css" />
     <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div id="main">
+      <h1>TEAM GENERATOR</h1>
+
+      <div id="main-container">
+        <div id="left-section">
+          <div id="add-member">
+            <div id="first-column">
+              <h2>Add Member</h2>
+              <form>
+                <input id="input-text" type="text" placeholder="Name" />
+                <button id="add-button">Add</button>
+              </form>
+              <!-- <input type="text" placeholder="Name" /> -->
+            </div>
+            <div id="second-column">
+              <h2>Teams</h2>
+              <div id="number-of-teams-section">
+                <button class="plus-minus-button">-</button>
+                <input type="number" />
+                <button class="plus-minus-button">+</button>
+              </div>
+            </div>
+          </div>
+          <div id="member-list">
+            <div id="the-list">
+              <div class="names">Alexandra</div>
+              <div class="names">Maria</div>
+              <div class="names">Horia</div>
+              <div class="names">Andrei</div>
+            </div>
+          </div>
+          <div id="list-buttons">
+            <button id="assign-button">Assign Member</button>
+            <button id="reset-button">Reset</button>
+          </div>
+        </div>
+        <div id="right-section">right section</div>
+      </div>
+    </div>
+  </body>
 </html>
