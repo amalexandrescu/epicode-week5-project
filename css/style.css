@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
 *,
 ::after,
 ::before {
@@ -7,15 +9,16 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: blanchedalmond;
+  background-color: #f7f9fa;
   width: 100vw;
   height: 100vh;
+  font-family: "Inter", sans-serif;
 }
 
 h1 {
   width: 85%;
-  background-color: aqua;
   margin-inline: auto;
+  font-weight: 400;
 }
 
 #main {
@@ -25,12 +28,12 @@ h1 {
 
 #main-container {
   width: 85%;
-  height: 80%;
-  background-color: pink;
+  height: 50%;
   margin-inline: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 #left-section {
@@ -39,7 +42,6 @@ h1 {
   justify-content: space-between;
   align-items: center;
   width: 50%;
-  /* flex-grow: 1; */
   height: 100%;
   gap: 20px;
 }
@@ -48,7 +50,6 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* flex-grow: 1; */
   width: 100%;
 }
 
@@ -58,11 +59,13 @@ h1 {
   width: 100%;
   justify-content: center;
   align-items: center;
+  border: 1px solid #80808069;
+  border-radius: 3px;
+  box-shadow: 0px 2px 7px #80808069;
 }
 
 #list-buttons {
   display: flex;
-  flex-grow: 1;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -75,22 +78,28 @@ h1 {
   justify-content: space-between;
   align-items: flex-start;
   flex-grow: 3;
-  background-color: red;
+  gap: 10px;
 }
 
 #second-column {
   display: flex;
   flex-grow: 1;
+  gap: 10px;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: blue;
 }
 
 h2 {
   margin: 0;
   display: flex;
   align-items: center;
+  font-size: 15px;
+}
+
+#right-section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 #number-of-teams-section {
@@ -98,24 +107,35 @@ h2 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* flex-grow: 1; */
 }
 
 .plus-minus-button {
   width: 35px;
   height: 35px;
   cursor: pointer;
+  background-color: #527cfb;
+  border: 0px;
+  border-radius: 3px;
+  color: white;
 }
 
 input[type="number"] {
   width: 70px;
   height: 35px;
+  border: 0px;
+  border-radius: 3px;
+  text-align: center;
 }
 
 #right-section {
+  margin-top: 50px;
   display: flex;
   width: 50%;
-  /* flex-grow: 1; */
+  height: 100%;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-around;
 }
 
 form {
@@ -139,6 +159,9 @@ form > input[type="text"] {
   flex-grow: 2;
   /* And hide the input's outline, so the form looks like the outline */
   border: none;
+  overflow: hidden;
+  border-radius: 3px;
+  padding-left: 5px;
 }
 
 form input[type="text"]:focus {
@@ -148,11 +171,10 @@ form input[type="text"]:focus {
 
 form > button {
   /* Just a little styling to make it pretty */
-  border: 1px solid blue;
-  background: blue;
+  background: #527cfb;
   color: white;
   height: 35px;
-  /* width: 50px; */
+  border: 0;
 }
 
 #assign-button {
@@ -162,6 +184,10 @@ form > button {
   align-items: center;
   height: 35px;
   cursor: pointer;
+  background: #527cfb;
+  color: white;
+  border: 0;
+  border-radius: 3px;
 }
 
 #reset-button {
@@ -171,13 +197,18 @@ form > button {
   align-items: center;
   height: 35px;
   cursor: pointer;
+
+  background: #b93f46;
+  color: white;
+  border: 0;
+  border-radius: 3px;
 }
 
 #the-list {
   width: 100%;
   height: 100%;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 3px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -185,6 +216,26 @@ form > button {
 }
 
 .names {
-  /* padding-inline: 5px; */
   padding-block: 5px;
+  padding-left: 5px;
+}
+
+.board-style {
+  width: 150px;
+  height: 190px;
+  background-color: white;
+  border-radius: 3px;
+  padding-inline: 10px;
+  border: 1px solid #80808069;
+  box-shadow: 0px 2px 7px #80808069;
+}
+
+hr {
+  margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
